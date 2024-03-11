@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transaction popup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <button type="button" class="btn" onclick="openPopup()">Submit</button>
+    <div class="popup" id="popup">
+        <div style="text-align: center;">
+            <img src="check.png" alt="checkbtn">
+            <h2>
+                Thank you
+            </h2>
+            <p>
+                your details has successfully submitted
+            </p>
+            <button type="button" onclick="closePopup()">
+                ok
+            </button>
+        </div>
+       
+    </div>
+</div>
+
+<script>
+let popop=document.getElementById("popup");
+function openPopup()
+{
+popup.classList.add("open-popup");
+}
+function closePopup()
+{
+popup.classList.remove("open-popup");
+}
+</script>
+    
+</body>
+</html>
